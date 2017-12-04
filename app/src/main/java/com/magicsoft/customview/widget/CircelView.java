@@ -84,7 +84,7 @@ public class CircelView extends View {
         canvas.drawArc(rectF,270,200,false,arcPaint);
         String showText="显示文字";
         //绘制文字
-        canvas.drawText(showText,0,showText.length(),mCircelXY-(textSize),mCircelXY+(textSize/4),textPaint);
+        canvas.drawText(showText,0,showText.length(),mCircelXY-(textSize*2),mCircelXY+(textSize/4),textPaint);
 
     }
 }

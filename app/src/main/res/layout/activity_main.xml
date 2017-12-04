@@ -11,6 +11,11 @@
        android:layout_height="wrap_content"
        android:orientation="vertical">
 
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="volume"
+           android:onClick="volume"/>
        <com.magicsoft.customview.widget.textview.CustomTextView1
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -46,7 +51,15 @@
            android:layout_height="400dp"
            />
 
+        <com.magicsoft.customview.widget.VolumeView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#cecece"/>
 
+        <com.magicsoft.customview.widget.BarView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            />
    </LinearLayout>
 
 </ScrollView>

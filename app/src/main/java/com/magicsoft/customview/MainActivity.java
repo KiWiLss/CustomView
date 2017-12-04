@@ -1,9 +1,12 @@
 package com.magicsoft.customview;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
+import com.magicsoft.customview.activity.VolumeActivity;
 import com.magicsoft.customview.widget.TopBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,5 +30,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void volume(View view) {
+        startActivity(new Intent(this, VolumeActivity.class));
     }
 }
