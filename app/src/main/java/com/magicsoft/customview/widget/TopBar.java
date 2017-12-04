@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.magicsoft.customview.R;
+import com.magicsoft.customview.utils.DensityUtils;
 
 /**
  * -----------------------------------------------------------------
@@ -32,6 +34,7 @@ import com.magicsoft.customview.R;
  */
 
 public class TopBar extends RelativeLayout {
+    public static final String TAG="MMM";
     private final String title;
     private int mTitleColor;
     private float mTitleSize;
@@ -86,6 +89,7 @@ public class TopBar extends RelativeLayout {
         //为创建的组元素赋值
         mRightBtn.setText(mRihgtText);
         mRightBtn.setTextSize(mRightSize);
+        Log.e(TAG, "TopBar: "+mRightSize+"||"+DensityUtils.getInstance().dp2px(context,mRightSize) );
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             mRightBtn.setBackground(mRightBackground);
         }

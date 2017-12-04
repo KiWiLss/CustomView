@@ -26,21 +26,25 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="看看文字的大小"
-           android:textSize="10dp"/>
+           android:textSize="15dp"/>
        <com.magicsoft.customview.widget.TopBar
            android:id="@+id/tb_main_topbar"
            android:layout_width="match_parent"
            android:layout_height="50dp"
            app:title="自定义标题"
            app:titleTextColor="@color/colorAccent"
-           app:titleTextSize="10dp"
+           app:titleTextSize="15dp"
            app:leftText="左边"
            app:leftBackground="@color/colorPrimaryDark"
            app:rightText="右边"
            app:rightBackground="@color/colorPrimary"
-           app:rightTextSize="8dp"
+           app:rightTextSize="5dp"
            />
 
+       <com.magicsoft.customview.widget.CircelView
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           />
 
 
    </LinearLayout>
