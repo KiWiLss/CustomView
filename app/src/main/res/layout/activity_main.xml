@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.magicsoft.customview.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+       <com.magicsoft.customview.widget.textview.CustomTextView1
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="背景双层"
+           android:padding="10dp"/>
+
+        <com.magicsoft.customview.widget.textview.CustomView2
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="渐变和闪烁的文字"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="看看文字的大小"
+           android:textSize="10dp"/>
+       <com.magicsoft.customview.widget.TopBar
+           android:id="@+id/tb_main_topbar"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           app:title="自定义标题"
+           app:titleTextColor="@color/colorAccent"
+           app:titleTextSize="10dp"
+           app:leftText="左边"
+           app:leftBackground="@color/colorPrimaryDark"
+           app:rightText="右边"
+           app:rightBackground="@color/colorPrimary"
+           app:rightTextSize="8dp"
+           />
+
+
+
+   </LinearLayout>
+
+</ScrollView>
