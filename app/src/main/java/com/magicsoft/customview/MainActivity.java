@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.magicsoft.customview.activity.DispathActivity;
+import com.magicsoft.customview.activity.LayerActivity;
 import com.magicsoft.customview.activity.ViewGroupActivity;
 import com.magicsoft.customview.activity.VolumeActivity;
 import com.magicsoft.customview.activity.listview.ListViewActivity;
@@ -49,5 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void listview(View view) {
         startActivity(new Intent(this, ListViewActivity.class));
+    }
+
+    public void layer(View view) {
+        startActivity(new Intent(this, LayerActivity.class));
     }
 }

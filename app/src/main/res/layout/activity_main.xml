@@ -31,6 +31,11 @@
            android:layout_height="wrap_content"
            android:text="listview"
            android:onClick="listview"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="layer"
+           android:onClick="layer"/>
        <com.magicsoft.customview.widget.textview.CustomTextView1
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
