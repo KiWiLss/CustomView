@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.magicsoft.customview.activity.DispathActivity;
 import com.magicsoft.customview.activity.ViewGroupActivity;
 import com.magicsoft.customview.activity.VolumeActivity;
 import com.magicsoft.customview.widget.TopBar;
@@ -39,5 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void viewgroup(View view) {
         startActivity(new Intent(this, ViewGroupActivity.class));
+    }
+
+    public void dispatch(View view) {
+        startActivity(new Intent(this, DispathActivity.class));
     }
 }

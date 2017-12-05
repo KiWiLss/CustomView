@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 /**
@@ -64,7 +63,7 @@ public class BarView extends View {
             random = Math.random();
             //随机的高度
             float currentHeight = (float) (height * random);
-            Log.e(TAG, "onDraw: *****"+currentHeight+"||"+random);
+            //Log.e(TAG, "onDraw: *****"+currentHeight+"||"+random);
             canvas.drawRect((float) (width*0.4/2+mRectWidth*i+offset),
                     currentHeight,
                     (float) (width*0.4/2+mRectWidth*(i+1)),height,mPiant);

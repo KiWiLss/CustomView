@@ -7,7 +7,6 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import com.magicsoft.customview.utils.DensityUtils;
@@ -75,7 +74,7 @@ public class CircelView extends View {
 
         mCircelXY=getWidth()/2;
         mRadius = getWidth() * 0.5 / 2;
-        Log.e(TAG, "onDraw: "+getWidth()+"||"+mCircelXY );
+        //Log.e(TAG, "onDraw: "+getWidth()+"||"+mCircelXY );
         //绘制圆
         canvas.drawCircle(mCircelXY,mCircelXY, (float) mRadius,circlePaint);
         RectF rectF = new RectF((float) (width * 0.1), (float) (width * 0.1), (float) (width * 0.9), (float) (width * 0.9));
