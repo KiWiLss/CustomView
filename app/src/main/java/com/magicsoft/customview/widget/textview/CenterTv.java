@@ -2,6 +2,8 @@ package com.magicsoft.customview.widget.textview;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.widget.TextView;
@@ -38,7 +40,11 @@ public class CenterTv extends TextView {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
-
+        Paint paint = new Paint();
+        paint.setStyle(Paint.Style.FILL);
+        paint.setAntiAlias(true);
+        paint.setColor(Color.RED);
+        paint.setTextSize(40);
+        canvas.drawText("文字测试",0,getHeight()-10,paint);
     }
 }

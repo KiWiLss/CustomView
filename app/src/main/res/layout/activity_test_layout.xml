@@ -7,7 +7,22 @@
     <!--<com.magicsoft.customview.widget.CircleProgressView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content" />-->
+    <com.magicsoft.customview.widget.MeterView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/test_layer"/>
 
+    <com.magicsoft.customview.widget.textview.CenterTv
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_shape_shadow"
+        android:layout_marginTop="20dp"
+        />
     <com.magicsoft.customview.widget.VolumeView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

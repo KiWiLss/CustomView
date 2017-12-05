@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.magicsoft.customview.activity.DispathActivity;
 import com.magicsoft.customview.activity.ViewGroupActivity;
 import com.magicsoft.customview.activity.VolumeActivity;
+import com.magicsoft.customview.activity.listview.ListViewActivity;
 import com.magicsoft.customview.widget.TopBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,5 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void dispatch(View view) {
         startActivity(new Intent(this, DispathActivity.class));
+    }
+
+    public void listview(View view) {
+        startActivity(new Intent(this, ListViewActivity.class));
     }
 }

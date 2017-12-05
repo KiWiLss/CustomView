@@ -20,6 +20,7 @@
         <activity android:name=".activity.VolumeActivity"/>
         <activity android:name=".activity.ViewGroupActivity"/>
         <activity android:name=".activity.DispathActivity"/>
+        <activity android:name=".activity.listview.ListViewActivity"/>
     </application>
 
 </manifest>
