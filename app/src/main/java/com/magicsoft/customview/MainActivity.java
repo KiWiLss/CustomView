@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.magicsoft.customview.activity.Color;
 import com.magicsoft.customview.activity.DispathActivity;
 import com.magicsoft.customview.activity.LayerActivity;
+
 import com.magicsoft.customview.activity.ViewGroupActivity;
 import com.magicsoft.customview.activity.VolumeActivity;
 import com.magicsoft.customview.activity.listview.ListViewActivity;
@@ -54,5 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void layer(View view) {
         startActivity(new Intent(this, LayerActivity.class));
+    }
+
+    public void shape(View view) {
+        startActivity(new Intent(this, Color.class));
     }
 }
