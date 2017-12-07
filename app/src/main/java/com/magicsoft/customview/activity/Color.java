@@ -1,10 +1,14 @@
 package com.magicsoft.customview.activity;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 
 import com.magicsoft.customview.R;
+import com.magicsoft.customview.utils.IconUtils;
 import com.magicsoft.customview.widget.ColorView;
 
 /**
@@ -44,7 +48,9 @@ public class Color extends AppCompatActivity {
 
         cv.setColorArray(colorArray2);
 
-
+        ImageView viewById = (ImageView) findViewById(R.id.img_shape_iocn);
+        Bitmap bitmap = IconUtils.handleImagePixelsRelief(BitmapFactory.decodeResource(getResources(), R.mipmap.jj2));
+        viewById.setImageBitmap(bitmap);
 
     }
 }
