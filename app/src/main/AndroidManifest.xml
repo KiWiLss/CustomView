@@ -25,6 +25,7 @@
 
         <activity android:name=".activity.LayerActivity"/>
         <activity android:name=".activity.Color"/>
+        <activity android:name=".activity.PaintActivity"/>
     </application>
 
 </manifest>

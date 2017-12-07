@@ -42,6 +42,12 @@
            android:text="shape"
            android:onClick="shape"
            android:textAllCaps="false"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="paint"
+           android:onClick="paint"
+           android:textAllCaps="false"/>
        <com.magicsoft.customview.widget.textview.CustomTextView1
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"

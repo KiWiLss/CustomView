@@ -10,6 +10,7 @@ import com.magicsoft.customview.activity.Color;
 import com.magicsoft.customview.activity.DispathActivity;
 import com.magicsoft.customview.activity.LayerActivity;
 
+import com.magicsoft.customview.activity.PaintActivity;
 import com.magicsoft.customview.activity.ViewGroupActivity;
 import com.magicsoft.customview.activity.VolumeActivity;
 import com.magicsoft.customview.activity.listview.ListViewActivity;
@@ -60,5 +61,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void shape(View view) {
         startActivity(new Intent(this, Color.class));
+    }
+
+    public void paint(View view) {
+        startActivity(new Intent(this, PaintActivity.class));
     }
 }
