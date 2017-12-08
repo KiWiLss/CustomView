@@ -3,6 +3,7 @@ package com.magicsoft.customview;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -18,6 +19,7 @@ import com.magicsoft.customview.widget.TopBar;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String TAG = "MMM";
     private TopBar mTp;
 
     @Override
@@ -36,7 +38,44 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "left", Toast.LENGTH_SHORT).show();
             }
         });
+        Log.e(TAG, "onCreate: " );
 
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.e(TAG, "onRestart: " );
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.e(TAG, "onStart: " );
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.e(TAG, "onResume: " );
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.e(TAG, "onPause: " );
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.e(TAG, "onStop: " );
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.e(TAG, "onDestroy: " );
     }
 
     public void volume(View view) {
