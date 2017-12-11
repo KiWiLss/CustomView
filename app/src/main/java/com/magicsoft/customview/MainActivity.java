@@ -1,18 +1,19 @@
 package com.magicsoft.customview;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
 import com.magicsoft.customview.activity.MainActivityB;
+import com.magicsoft.customview.utils.CircularAnimUtil;
 import com.magicsoft.customview.widget.TopBar;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MMM";
     private TopBar mTp;
+    private View rl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
         });
         */
        Log.e(TAG, "onCreate: " );
-
-         findViewById(R.id.rl_main_out).setOnClickListener(new View.OnClickListener() {
+        rl = findViewById(R.id.rl_main_out);
+        findViewById(R.id.rl_main_out).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MainActivityB.class));
+                //startActivity(new Intent(MainActivity.this, MainActivityB.class));
+                CircularAnimUtil.startActivity(MainActivity.this, MainActivityB.class,rl,R.color.colorAccent);
             }
         });
 

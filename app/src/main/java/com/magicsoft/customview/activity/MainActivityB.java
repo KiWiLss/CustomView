@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.magicsoft.customview.R;
 import com.magicsoft.customview.activity.listview.ListViewActivity;
+import com.magicsoft.customview.utils.CircularAnimUtil;
 import com.magicsoft.customview.widget.TopBar;
 
 public class MainActivityB extends AppCompatActivity {
@@ -101,6 +102,7 @@ public class MainActivityB extends AppCompatActivity {
     }
 
     public void aClick(View view) {
-        startActivity(new Intent(this, MainActivityA.class));
+        //startActivity(new Intent(this, MainActivityA.class));
+        CircularAnimUtil.startActivity(MainActivityB.this, MainActivityA.class,mTp,R.color.colorAccent);
     }
 }
