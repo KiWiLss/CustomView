@@ -1,20 +1,12 @@
 package com.magicsoft.customview;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
-import com.magicsoft.customview.activity.Color;
-import com.magicsoft.customview.activity.DispathActivity;
-import com.magicsoft.customview.activity.LayerActivity;
-
-import com.magicsoft.customview.activity.PaintActivity;
-import com.magicsoft.customview.activity.ViewGroupActivity;
-import com.magicsoft.customview.activity.VolumeActivity;
-import com.magicsoft.customview.activity.listview.ListViewActivity;
+import com.magicsoft.customview.activity.MainActivityB;
 import com.magicsoft.customview.widget.TopBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mTp = (TopBar) findViewById(R.id.tb_main_topbar);
+        setContentView(R.layout.activity_mainb);
+       /* mTp = (TopBar) findViewById(R.id.tb_main_topbar);
         mTp.setOnTopBarClickListener(new TopBar.topBarClickListener() {
             @Override
             public void rightClick() {
@@ -38,7 +32,15 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "left", Toast.LENGTH_SHORT).show();
             }
         });
-        Log.e(TAG, "onCreate: " );
+        */
+       Log.e(TAG, "onCreate: " );
+
+         findViewById(R.id.rl_main_out).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MainActivityB.class));
+            }
+        });
 
     }
 
@@ -78,31 +80,35 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "onDestroy: " );
     }
 
-    public void volume(View view) {
-        startActivity(new Intent(this, VolumeActivity.class));
-    }
-
-    public void viewgroup(View view) {
-        startActivity(new Intent(this, ViewGroupActivity.class));
-    }
-
-    public void dispatch(View view) {
-        startActivity(new Intent(this, DispathActivity.class));
-    }
-
-    public void listview(View view) {
-        startActivity(new Intent(this, ListViewActivity.class));
-    }
-
-    public void layer(View view) {
-        startActivity(new Intent(this, LayerActivity.class));
-    }
-
-    public void shape(View view) {
-        startActivity(new Intent(this, Color.class));
-    }
-
-    public void paint(View view) {
-        startActivity(new Intent(this, PaintActivity.class));
-    }
+//    public void volume(View view) {
+//        startActivity(new Intent(this, VolumeActivity.class));
+//    }
+//
+//    public void viewgroup(View view) {
+//        startActivity(new Intent(this, ViewGroupActivity.class));
+//    }
+//
+//    public void dispatch(View view) {
+//        startActivity(new Intent(this, DispathActivity.class));
+//    }
+//
+//    public void listview(View view) {
+//        startActivity(new Intent(this, ListViewActivity.class));
+//    }
+//
+//    public void layer(View view) {
+//        startActivity(new Intent(this, LayerActivity.class));
+//    }
+//
+//    public void shape(View view) {
+//        startActivity(new Intent(this, Color.class));
+//    }
+//
+//    public void paint(View view) {
+//        startActivity(new Intent(this, PaintActivity.class));
+//    }
+//
+//    public void aClick(View view) {
+//        startActivity(new Intent(this, MainActivityA.class));
+//    }
 }
