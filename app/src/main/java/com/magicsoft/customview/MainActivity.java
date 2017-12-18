@@ -8,6 +8,7 @@ import android.view.View;
 import com.magicsoft.customview.activity.MainActivityB;
 import com.magicsoft.customview.utils.CircularAnimUtil;
 import com.magicsoft.customview.widget.TopBar;
+import com.xiasuhuei321.loadingdialog.view.LoadingDialog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +44,17 @@ public class MainActivity extends AppCompatActivity {
                 CircularAnimUtil.startActivity(MainActivity.this, MainActivityB.class,rl,R.color.colorAccent);
             }
         });
+
+
+        final LoadingDialog loadingDialog = new LoadingDialog(this, false);
+        loadingDialog.setLoadingText("初始化").setLoadStyle(LoadingDialog.STYLE_LINE);
+        loadingDialog.show();
+        getWindow().getDecorView().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loadingDialog.close();
+            }
+        }, 5000);
 
     }
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_red"
+        android:title="应用内红"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_green"
+        android:title="应用内绿"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_reserve"
+        android:title="恢复默认"
+        app:showAsAction="never"/>
+</menu>
