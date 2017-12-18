@@ -40,4 +40,8 @@ public class ListActivity extends AppCompatActivity {
     public void webview(View view) {
         startActivity(new Intent(this, WebActivity.class));
     }
+
+    public void scrollview(View view) {
+        startActivity(new Intent(this, ScrollActivity.class));
+    }
 }
