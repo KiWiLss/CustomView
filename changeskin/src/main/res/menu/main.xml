@@ -13,4 +13,7 @@
     <item android:id="@+id/action_reserve"
         android:title="恢复默认"
         app:showAsAction="never"/>
+    <item android:id="@+id/action_next"
+        android:title="下一个"
+        app:showAsAction="never"/>
 </menu>
