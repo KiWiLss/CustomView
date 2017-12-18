@@ -68,7 +68,8 @@ public class NormalActivity extends AppCompatActivity {
                 View mContent = mDl.getChildAt(0);
                 View mMenu = drawerView;
 
-
+                int width = mMenu.getWidth();
+                float scale = slideOffset * 1.0f / width;
 
                /* WindowManager wm = NormalActivity.this.getWindowManager();
 
@@ -87,7 +88,7 @@ public class NormalActivity extends AppCompatActivity {
 
                 mContent.layout(mMenu.getRight(), 0, mMenu.getRight() + dm.widthPixels, dm.heightPixels);*/
 
-                float scale = 1 - slideOffset;
+              /*  float scale = 1 - slideOffset;
                 float rightScale = 0.8f + scale * 0.2f;
 
 
@@ -109,7 +110,7 @@ public class NormalActivity extends AppCompatActivity {
 
 
                 }
-
+*/
             }
 
             @Override

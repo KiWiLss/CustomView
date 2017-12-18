@@ -13,7 +13,11 @@
         android:text="一般样式抽屉"
         android:onClick="normal"/>
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="webview"
+        android:onClick="webview"/>
 
 </LinearLayout>
 </ScrollView>
