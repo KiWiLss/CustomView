@@ -16,7 +16,11 @@
         android:text="画布"
         android:onClick="canvas"/>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="画布2"
+        android:onClick="canvas2"/>
 
 
 </LinearLayout>

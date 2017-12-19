@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.magicsoft.customviewone.widget.canvas.CanvasTest
+        <com.magicsoft.customviewone.widget.canvas.PieView
+            android:id="@+id/pv"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

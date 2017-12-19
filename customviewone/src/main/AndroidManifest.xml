@@ -14,6 +14,7 @@
         </activity>
 
         <activity android:name=".activity.canvas.CanvasTestActivity"/>
+        <activity android:name=".activity.canvas.CanvasTestActivity2"/>
     </application>
 
 </manifest>
