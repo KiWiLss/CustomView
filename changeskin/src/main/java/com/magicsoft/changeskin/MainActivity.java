@@ -1,15 +1,18 @@
 package com.magicsoft.changeskin;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.magicsoft.changeskin.activity.ListActivity;
 import com.zhy.changeskin.SkinManager;
+
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
         mTb = (Toolbar) findViewById(R.id.tb_main_toolbar);
         setSupportActionBar(mTb);
-
+        String reg="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$";
+        Log.e("MMM", "onCreate: "+ Pattern.matches(reg,"15205622327") );
     }
 
     @Override

@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.magicsoft.changeskin.R;
 import com.magicsoft.changeskin.activity.drawabler.NormalActivity;
+import com.magicsoft.changeskin.activity.mdaes.MdAesActivity;
 
 /**
  * -----------------------------------------------------------------
@@ -43,5 +44,9 @@ public class ListActivity extends AppCompatActivity {
 
     public void scrollview(View view) {
         startActivity(new Intent(this, ScrollActivity.class));
+    }
+
+    public void encode(View view) {
+        startActivity(new Intent(this, MdAesActivity.class));
     }
 }

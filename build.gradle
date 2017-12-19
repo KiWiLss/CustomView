@@ -16,6 +16,8 @@ allprojects {
     repositories {
         jcenter()
         maven { url 'https://www.jitpack.io' }
+        // 就是下面这一行
+        maven { url "http://lib.gcssloop.com/repository/gcssloop-central/" }
     }
 }
 
