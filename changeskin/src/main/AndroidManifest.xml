@@ -21,6 +21,8 @@
         <activity android:name=".activity.WebActivity"/>
         <activity android:name=".activity.ScrollActivity"/>
         <activity android:name=".activity.mdaes.MdAesActivity"/>
+
+        <activity android:name=".activity.StatusActivity"/>
     </application>
 
 </manifest>

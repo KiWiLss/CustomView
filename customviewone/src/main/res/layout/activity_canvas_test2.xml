@@ -4,7 +4,11 @@
     android:layout_height="match_parent">
 
 
-    <com.magicsoft.customviewone.widget.canvas.PictureCancas
+    <!--<com.magicsoft.customviewone.widget.canvas.PictureCancas-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.magicsoft.customviewone.widget.path.PathView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

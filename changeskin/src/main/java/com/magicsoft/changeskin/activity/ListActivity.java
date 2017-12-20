@@ -49,4 +49,8 @@ public class ListActivity extends AppCompatActivity {
     public void encode(View view) {
         startActivity(new Intent(this, MdAesActivity.class));
     }
+
+    public void statusButton(View view) {
+        startActivity(new Intent(this, StatusActivity.class));
+    }
 }

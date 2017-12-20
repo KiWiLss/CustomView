@@ -18,6 +18,9 @@ allprojects {
         maven { url 'https://www.jitpack.io' }
         // 就是下面这一行
         maven { url "http://lib.gcssloop.com/repository/gcssloop-central/" }
+        maven {
+            url 'https://dl.bintray.com/spark/maven'
+        }
     }
 }
 
