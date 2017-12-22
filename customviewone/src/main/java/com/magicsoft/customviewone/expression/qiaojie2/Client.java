@@ -36,4 +36,27 @@ public class Client {
         }
 
     }
+
+    public static void fun(){
+        Car car = null;
+        int i = 4;
+        for (int j = 0; j < i; j++) {
+
+            switch (j) {
+                case 0:
+                    car = new SedanCar(new RainyTire());
+                    break;
+                case 1:
+                    car = new SedanCar(new SandyTire());
+                    break;
+                case 2:
+                    car = new RacingCar(new RainyTire());
+                    break;
+                case 3:
+                    car = new RacingCar(new SandyTire());
+                    break;
+            }
+            car.run();
+        }
+    }
 }

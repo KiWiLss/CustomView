@@ -8,6 +8,7 @@ import android.view.View;
 import com.magicsoft.customviewone.activity.CustomActivity;
 import com.magicsoft.customviewone.activity.canvas.CanvasTestActivity;
 import com.magicsoft.customviewone.activity.canvas.CanvasTestActivity2;
+import com.magicsoft.customviewone.expression.Test;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
+        //Client.fun();
+        Test.component();
     }
 
     public void canvas(View view) {

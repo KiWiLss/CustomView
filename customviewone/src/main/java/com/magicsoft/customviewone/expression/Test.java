@@ -1,5 +1,8 @@
 package com.magicsoft.customviewone.expression;
 
+import com.magicsoft.customviewone.expression.composite.Composite;
+import com.magicsoft.customviewone.expression.composite.Leaf;
+
 /**
  * <pre>
  *     author : Lss winding
@@ -12,7 +15,18 @@ package com.magicsoft.customviewone.expression;
 
 
 public class Test {
-    public static void main(String[] args) {
-        System.out.println("hello world");
+    public static void component(){
+
+        Composite root = new Composite();
+
+        Leaf leaf1 = new Leaf();
+        Composite branch = new Composite();
+        root.add(leaf1);
+        root.add(branch);
+
+        Leaf leaf2 = new Leaf();
+        branch.add(leaf2);
+
+        root.operation();
     }
 }
