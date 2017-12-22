@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.magicsoft.customviewone.widget.touch.MotionEventViewGroupA
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center">
+        <com.magicsoft.customviewone.widget.touch.MotionEventViewGroupB
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@android:color/holo_purple"
+            android:gravity="center">
+            <com.magicsoft.customviewone.widget.touch.MotionEventViewC
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center" />
+        </com.magicsoft.customviewone.widget.touch.MotionEventViewGroupB>
+    </com.magicsoft.customviewone.widget.touch.MotionEventViewGroupA>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

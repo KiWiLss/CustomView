@@ -53,4 +53,8 @@ public class ListActivity extends AppCompatActivity {
     public void statusButton(View view) {
         startActivity(new Intent(this, StatusActivity.class));
     }
+
+    public void glide(View view) {
+        startActivity(new Intent(this, GlideActivity.class));
+    }
 }

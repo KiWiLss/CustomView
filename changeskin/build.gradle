@@ -27,7 +27,8 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.+'
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile 'com.zhy:changeskin:4.0.2'
@@ -35,5 +36,9 @@ dependencies {
 
     compile 'com.gcssloop.util:encrypt:1.0.0@aar'
 
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
 
+//    implementation 'com.github.bumptech.glide:glide:4.4.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
 }
